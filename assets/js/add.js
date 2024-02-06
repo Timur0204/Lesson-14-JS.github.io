@@ -37,7 +37,6 @@ function populateCurrency() {
                convertToSelectedCurrency(selectedCurrency);
            });
        })
-       .catch(error => console.error('An error occurred while fetching data:', error));
 }
 
 function convertToSelectedCurrency(selectedCurrency) {
@@ -65,7 +64,6 @@ function convertToSelectedCurrency(selectedCurrency) {
                badge.textContent = `${selectedCurrency} ${convertedPrice}`;
            });
        })
-       .catch(error => console.error('An error occurred while converting currency:', error));
 }
 
 populateCurrency();
